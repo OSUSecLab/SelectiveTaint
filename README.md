@@ -3,7 +3,7 @@
 
 # Downloads
 
-Please refer to selectivetaint_instructions.pdf for how to download and use SelectiveTaint.
+Please refer to selectivetaint_instructions.pdf on how to download and use SelectiveTaint.
 
 # Citing
 

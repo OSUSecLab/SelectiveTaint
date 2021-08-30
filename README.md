@@ -1,6 +1,9 @@
 #  SelectiveTaint
 **SelectiveTaint** is an efficient **selective taint analysis framework** for binary executables. The key idea is to **selectively** instrument the instructions involving taint analysis using **static binary rewriting** instead of dynamic binary instrumentation. At a high level, SelectiveTaint statically scans taint sources of interest in the binary code, leverages value set analysis to conservatively determine whether an instruction operand needs to be tainted or not, and then selectively taints the instructions of interest. For more details, please see our [paper](https://www.usenix.org/conference/usenixsecurity21/presentation/chen-sanchuan) (USENIX Security 2021).
 
+
+The components of SelectiveTint include:
+
 # Downloads
 
 Please refer to selectivetaint_instructions.pdf on how to download and use SelectiveTaint.

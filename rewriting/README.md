@@ -1,6 +1,6 @@
 # selectivetaint
 
-0. set environment
+0.set environment
 . ./scripts/set_environment.sh
 
 1.conveats:

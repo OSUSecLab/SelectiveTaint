@@ -12,6 +12,12 @@ SelectiveTint has four key components inside:
 
 - (4) **Binary Rewriting**. Having identified the instructions that need to be tainted, we then use the static binary rewriting to insert the taint analysis logic including tracking of the taint sources and taint propagations as well as the taint checks at the taint sinks.
 
+SelectiveTaint passed USENIX 2021 Artifact Evaluation and the artifact evaluation instructions can be found in selectivetaint_instructions.pdf.
+
+# Downloads
+
+Please refer to selectivetaint_instructions.pdf on how to download and use SelectiveTaint.
+
 ## Run Command Examples
 
 Please set up environment according to selectivetaint_instructions.pdf.
@@ -35,10 +41,6 @@ make
 
 ./selectivetaint -i ./perlbench_base.i386-m32-gcc42-nn -o ./perlbench_base.i386-m32-gcc42-nn_selective -t ./tests/perlbench_base.i386-m32-gcc42-nn_tainted_insn_typed_output_file
 ```
-
-# Downloads
-
-Please refer to selectivetaint_instructions.pdf on how to download and use SelectiveTaint.
 
 # Citing
 

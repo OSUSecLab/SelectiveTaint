@@ -24,7 +24,17 @@ cd analysis
 python3 static.py -input ./perlbench_base.i386-m32-gcc42-nn -taintsources read fread fgetc
 ```
 
+As for static rewriting, change to rewriting directory and execute corresponding command. For instance, for perlbench:
 
+```
+cd ../rewriting
+
+. ./scripts/set_environment.sh
+
+make
+
+./selectivetaint -i ./perlbench_base.i386-m32-gcc42-nn -o ./perlbench_base.i386-m32-gcc42-nn_selective -t ./tests/perlbench_base.i386-m32-gcc42-nn_tainted_insn_typed_output_file
+```
 
 # Downloads
 
